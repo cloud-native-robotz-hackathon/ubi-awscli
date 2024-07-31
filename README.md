@@ -1,5 +1,5 @@
 # ubi-awscli
-[![Docker Repository on Quay](https://quay.io/repository/davivcgarcia/ubi-awscli/status "Docker Repository on Quay")](https://quay.io/repository/davivcgarcia/ubi-awscli)
+[![Docker Repository on Quay](https://quay.io/repository/cloud-native-robotz-hackathon/ubi-awscli/status "Docker Repository on Quay")](https://quay.io/repository/cloud-native-robotz-hackathon/ubi-awscli)
 
 Unofficial image for AWS CLI based on Red Hat Universal Base Image v9
 
@@ -12,7 +12,9 @@ This image was build using the [Red Hat Universal Base Image (UBI) 9](https://de
 If you running standalone containers, you can use `podman` or `docker` with:
 
 ```bash
-podman run -it quay.io/davivcgarcia/ubi-awscli aws help
+export IMAGE='quay.io/cloud-native-robotz-hackathon/ubi-awscli:1.25.83'
+podman build --platform linux/amd64,linux/arm64  --manifest ${IMAGE}  .
+podman manifest push ${IMAGE}
 ```
 
 ## Any support?
