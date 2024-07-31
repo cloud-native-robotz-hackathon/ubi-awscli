@@ -1,5 +1,4 @@
 # ubi-awscli
-[![Docker Repository on Quay](https://quay.io/repository/cloud-native-robotz-hackathon/ubi-awscli/status "Docker Repository on Quay")](https://quay.io/repository/cloud-native-robotz-hackathon/ubi-awscli)
 
 Unofficial image for AWS CLI based on Red Hat Universal Base Image v9
 
